@@ -15,11 +15,11 @@ var foo = function(){
 	console.log('foo');
 }
 ```
-####Common things
 in either ways, 
 the name `foo` will be avalable in the context where it is diclared and it will refer the function definition.
 
 ##### Name Collission
+either you choose declaration style or literal notation, if you use the same name again with in the context, the name will refer the latest definition that is diclared.
 ```javascript
 function foo(){
 	console.log(1);
