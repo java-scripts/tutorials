@@ -137,21 +137,18 @@ for(var i in data){
 2 Object {name: "testuser3", age: 30}
 ```
 ###### passing function as an argument
+
 ```javascript
 var foo = function (callback){
 	callback();
 }
+//
 foo(function(){
 	console.log('callback is invoked');
 });
-
 ```
->output
 
-```javascript
-callback is invoked
 
-```
 
 ####### Now combining above concepts to implimenting 'foreach' a higher order function
 ```javascript
