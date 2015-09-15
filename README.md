@@ -153,7 +153,7 @@ callback is invoked...
 ```
 
 
-####### Now combining above concepts to implimenting 'foreach' a higher order function
+####### Now combining above concepts and implimenting a higher order function `foreach` 
 ```javascript
 	var foreach = function(data, iterator){
 		for(var i in data){
