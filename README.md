@@ -27,11 +27,11 @@ function foo(){
 function foo(){
 	console.log(2);
 }
-foo()
+foo();
 ```
 > output
 ```javascript
-> 2
+>2
 ```
 
 ######The uncommon behaviour between diclarative and literal notations
