@@ -68,5 +68,5 @@ foo();
 >1
 >2
 ```
-
+so it is advisable to use literal notation over diclaration style to avoid unpredicable behaviour due to hoising.
 
