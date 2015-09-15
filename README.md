@@ -136,6 +136,45 @@ for(var i in data){
 1 Object {name: "testuser2", age: 23}
 2 Object {name: "testuser3", age: 30}
 ```
+###### passing function as an argument
+```javascript
+var foo = function (callback){
+	callback();
+}
+
+foo(function(){
+	console.log('callback is invoked');
+});
+```
+>output
+```javascript
+callback is invoked
+```
+
+####### Now combining above concepts to implimenting 'foreach' a higher order function
+```javascript
+	var foreach = function(data, iterator){
+		for(var i in data){
+			//console.log(i, data[i]);
+			iterator(i,data[i]);
+		}
+	}
+	
+	//usage
+	foreach(data,function(i,record){
+		console.log(i, record, record.name);
+	});
+```
+>output 
+```javascript
+0 Object {name: "testuser1", age: 20}
+1 Object {name: "testuser2", age: 23}
+2 Object {name: "testuser3", age: 30}
+```
+
+
+
+
 
 
 
