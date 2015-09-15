@@ -141,14 +141,16 @@ for(var i in data){
 var foo = function (callback){
 	callback();
 }
-
 foo(function(){
 	console.log('callback is invoked');
 });
+
 ```
 >output
+
 ```javascript
 callback is invoked
+
 ```
 
 ####### Now combining above concepts to implimenting 'foreach' a higher order function
