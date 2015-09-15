@@ -118,3 +118,25 @@ also try
 ```javascript
 foo(undefined, null, NaN, Infinity); 
 ```
+
+
+### Higher Order functions
+since a function reference can be passed as an argument parameter, it is possible to compose higher order functions.
+
+###### Array traversing
+```javascript
+var data=[{name:'testuser1',age:20},{name:'testuser2',age:23},{name:'testuser3',age:30}];
+for(var i in data){
+	console.log(i, data[i]);
+}
+```
+>output 
+```javascript
+0 Object {name: "testuser1", age: 20}
+1 Object {name: "testuser2", age: 23}
+2 Object {name: "testuser3", age: 30}
+```
+
+
+
+
