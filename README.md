@@ -1,24 +1,25 @@
 # tutorials
 
 ##Functions
+### Function declaration and Function expression(literal) notation.
 
-whether you declare a function like below
+Function declaration
 ```javascript
 function foo(){
 	console.log('foo');
 }
 ```
-or using the literal notation like below
+Function literal notation
 ```javascript
 var foo = function(){
 	console.log('foo');
 }
 ```
+####Common things
 in either ways, 
-
 the name `foo` will be avalable in the context where it is diclared and it will refer the function definition.
 
-#### Name Collission
+##### Name Collission
 ```javascript
 function foo(){
 	console.log(1);
@@ -30,7 +31,7 @@ foo()
 ```
 > output
 ```javascript
->2
+> 2
 ```
 
 ######The uncommon behaviour between diclarative and literal notations
@@ -46,8 +47,8 @@ foo();
 ```
 >output
 ```javascript
->2
->2
+> 2
+> 2
 ```
 This unpredictable behaviour is due to *Hoisting*.
 
