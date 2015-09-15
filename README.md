@@ -87,10 +87,55 @@ foo(1,2,3);
 >3
 ```
 
+####Parameters and Arguments Object
 
+```javascript
+function add(a,b){
+	return a+b;
+}
 
+add(1);
+add(1,2);
+add(1,2,3);
+```
+> output
 
+```javascript
+>NAN
+>3
+>3
+```
+#####Arguments Object
 
+what datatypes can we use as parameters? 
+
+>you are free to use any
+
+```javascript
+function foo(){	
+	for(var i in arguments){
+		console.log(arguments[i], typeof arguments[i])
+	}
+}
+
+foo(1, '2', true, [], {}, function(){} );
+```
+
+> output
+
+```javascript
+>1 "number"
+>2 string
+>true "boolean"
+>[] "object"
+>Object {} "object"
+>function(){} "function"
+```
+also try  
+
+```javascript
+foo(undefined, null, NaN, Infinity); 
+```
 
 
 
