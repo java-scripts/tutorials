@@ -1,6 +1,9 @@
 # tutorials
 
 ##Functions
+####[higher-order-functions](#higher-order-functions)
+
+
 ### Function declaration and Function expression(literal) notation.
 
 Function declaration
