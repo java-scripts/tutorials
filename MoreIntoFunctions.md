@@ -31,7 +31,8 @@ var foo = function(){
 ```
 in either ways, the name `foo` will be available in the context where it is declared and it will refer the function definition.
 
- ### Name Collision
+### Name Collision
+ 
  either you choose declaration style or literal notation, if you use the same name again within the context, the name will refer the latest definition that is declared.
 ```javascript
 function foo(){
@@ -192,6 +193,6 @@ callback is invoked...
 
 
 # Functional Style
-  ### Map, Reduce & Currying
+### Map, Reduce & Currying
 # Asynchronous Style
 # Closures and IIFE
