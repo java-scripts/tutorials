@@ -1,9 +1,25 @@
-##Functions
-####[Function declaration and Function expression(literal) notation](#function-declaration-and-function-expressionliteral-notation-1)
-####[higher-order-functions](#higher-order-functions-1)
+#More Into Functions
 
+---
 
-### Function declaration and Function expression (literal) notation.
+* Functions
+  * Function declaration and Function expression (literal) notation.
+  * Name Collision
+  * The uncommon behavior between declarative and literal notations
+  * Parameters and Arguments Object
+* Higher Order functions
+* Functional Style
+  * Map, Reduce & Currying
+* Asynchronous Style
+* Closures and IIFE
+
+ 
+
+---
+
+#Functions
+
+## Function declaration and Function expression (literal) notation.
 
 Function declaration
 ```javascript
