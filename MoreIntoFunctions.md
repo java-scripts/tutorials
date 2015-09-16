@@ -5,13 +5,13 @@
 * Functions
   * [Function declaration and Function expression (literal) notation.](#function-declaration-and-function-expression-literal-notation)
   * [Name Collision](#name-collision)
-  * [The uncommon behavior between declarative and literal notations](the-uncommon-behavior-between-declarative-and-literal-notations)
-  * [Parameters and Arguments Object](parameters-and-arguments-object)
-* [Higher Order functions](higher-order-functions)
-* [Functional Style](functional-style)
-  * [Map, Reduce & Currying](map-reduce--currying)
-* [Asynchronous Style](asynchronous-style)
-* [Closures and IIFE](closures-and-iife)
+  * [The uncommon behavior between declarative and literal notations](#the-uncommon-behavior-between-declarative-and-literal-notations)
+  * [Parameters and Arguments Object](#parameters-and-arguments-object)
+* [Higher Order functions](#higher-order-functions)
+* [Functional Style](#functional-style)
+  * [Map, Reduce & Currying](#map-reduce--currying)
+* [Asynchronous Style](#asynchronous-style)
+* [Closures and IIFE](#closures-and-iife)
 
  ---
  
