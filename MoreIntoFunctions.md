@@ -215,7 +215,7 @@ var map = function(mappingFn,data){
 }
 //define a square function
 var square = function(v){return v*v;};
-//test
+//testing the map with square function
 console.log('squares of [1,2,3] =',map(square,[1,2,3]));
 ```
 >output
@@ -236,12 +236,44 @@ var reduce = function(reducingFn,data){
 //define add function 
 var add = function(a,b){return a+b;};
 
-//test
+//testing the reduce with add function
 console.log('sum of [1,2,3] =',reduce(add,[1,2,3]));
 ```
 >output
 ```javascript
 >sum of [1,2,3] = 6
+```
+Defining Curry Function.
+it is a partial function
+```javascript
+var curry = function(fn,arg1){
+	return function(arg2){
+		return fn(arg1,arg2);
+	}
+}
+
+//usage
+var squares = curry(map,square);
+var sum = curry(reduce, add);
+
+//tests
+console.log('squares of [1,2,3] =',squares([1,2,3]));
+console.log('sum of [1,2,3] =',sum([1,2,3]));
+```
+define another function which pipes the result 
+```javascript
+var pipe = function(f1,f2){
+	return function(data){
+		return f2(f1(data));
+	}
+}
+```
+Now everything we need is done. test the below
+```javascript
+//usage
+var sumofSquares = pipe(squares,sum);
+//test
+console.log('sumOfSquare of [1,2,3] =', sumofSquares([1,2,3]));
 ```
 
 
