@@ -5,7 +5,7 @@
 ####[higher-order-functions](#higher-order-functions-1)
 
 
-### Function declaration and Function expression(literal) notation.
+### Function declaration and Function expression (literal) notation.
 
 Function declaration
 ```javascript
@@ -19,11 +19,10 @@ var foo = function(){
 	console.log('foo');
 }
 ```
-in either ways, 
-the name `foo` will be avalable in the context where it is diclared and it will refer the function definition.
+in either ways, the name `foo` will be available in the context where it is declared and it will refer the function definition.
 
-##### Name Collission
-either you choose declaration style or literal notation, if you use the same name again with in the context, the name will refer the latest definition that is diclared.
+##### Name Collision
+either you choose declaration style or literal notation, if you use the same name again within the context, the name will refer the latest definition that is declared.
 ```javascript
 function foo(){
 	console.log(1);
@@ -38,7 +37,7 @@ foo();
 >2
 ```
 
-######The uncommon behaviour between diclarative and literal notations
+######The uncommon behavior between declarative and literal notations
 ```javascript
 function foo(){
 	console.log(1);
@@ -54,7 +53,7 @@ foo();
 > 2
 > 2
 ```
-This unpredictable behaviour is due to *Hoisting*.
+This unpredictable behavior is due to *Hoisting*.
 
 using literal notation
 ```javascript
@@ -72,8 +71,7 @@ foo();
 >1
 >2
 ```
->so it is advisable to use literal notation over diclaration style to avoid unpredicable behaviour due to hoising.
-
+>so it is advisable to use literal notation over declaration style to avoid such unpredictable behavior.
 ###Parameters and Arguments Object
 ```javascript
 function add(a,b){
@@ -157,7 +155,7 @@ callback is invoked...
 ```
 
 
-####### Now combining above concepts and implimenting a higher order function `foreach` 
+####### Now combining above concepts and implementing a higher order function `foreach` 
 ```javascript
 	var foreach = function(data, iterator){
 		for(var i in data){
