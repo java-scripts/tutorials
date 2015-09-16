@@ -196,10 +196,12 @@ callback is invoked...
 Writing the code in Declarative Style.
 Involves deriving new functions out of existing functions.
 ```javascript
+//below is what a functional style looks like
 var sumofSquaresFn = pipeFn(squaresFn,sumFn);
 sumofSquaresFn([1,2,3]) //output should be 14
 ```
 
+How to implent the functions to work the above way, go through the below.
 
 
 ### Map, Reduce & Currying
