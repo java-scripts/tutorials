@@ -1,1 +1,3 @@
 # tutorials
+
+##[MoreIntoFunctions](MoreIntoFunctions.md)
