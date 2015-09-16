@@ -194,7 +194,7 @@ callback is invoked...
 
 # Functional Style
 Writing the code in Declarative Style.
-Involves deriving new functions out of functions.
+Involves deriving new functions out of existing functions.
 ```javascript
 var sumofSquaresFn = pipeFn(squaresFn,sumFn);
 sumofSquaresFn([1,2,3]) //output should be 14
@@ -203,6 +203,47 @@ sumofSquaresFn([1,2,3]) //output should be 14
 
 
 ### Map, Reduce & Currying
+
+Defining Map function
+```javascript
+var map = function(mappingFn,data){
+	var results=[];
+	for(var key in data){		
+		results.push(mappingFn(data[key],key));
+	}
+	return results;		
+}
+//define a square function
+var square = function(v){return v*v;};
+//test
+console.log('squares of [1,2,3] =',map(square,[1,2,3]));
+```
+>output
+
+```javascript
+squares of [1,2,3] = [1, 4, 9]
+```
+
+Defining Reduce function
+```javascript
+var reduce = function(reducingFn,data){
+	var memo = data[0];
+	for(var index=1;index<data.length;index++){					
+		memo = reducingFn(memo,data[index]);		
+	}
+	return memo;	
+}
+//define add function 
+var add = function(a,b){return a+b;};
+
+//test
+console.log('sum of [1,2,3] =',reduce(add,[1,2,3]));
+```
+>output
+```javascript
+>sum of [1,2,3] = 6
+```
+
 
 # Asynchronous Style
 # Closures and IIFE
