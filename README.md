@@ -1,7 +1,7 @@
 # tutorials
 
 ##Functions
-####[Function declaration and Function expression(literal) notation](##function-declaration-and-function-expressionliteral-notation-1)
+####[Function declaration and Function expression(literal) notation](#function-declaration-and-function-expressionliteral-notation-1)
 ####[higher-order-functions](#higher-order-functions-1)
 
 
