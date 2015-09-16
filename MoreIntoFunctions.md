@@ -142,16 +142,16 @@ since a function reference can be passed as an argument parameter, it is possibl
 
 ###### Array traversing
 ```javascript
-var data=[{name:'testuser1',age:20},{name:'testuser2',age:23},{name:'testuser3',age:30}];
+var data = [{label:'A',value:11},{label:'B',value:22},{label:'C',value:33}];
 for(var i in data){
 	console.log(i, data[i]);
 }
 ```
 >output 
 ```javascript
-0 Object {name: "testuser1", age: 20}
-1 Object {name: "testuser2", age: 23}
-2 Object {name: "testuser3", age: 30}
+>0 Object {label: "A", value: 11}
+>1 Object {label: "B", value: 22}
+>2 Object {label: "C", value: 33}
 ```
 ###### passing function as an argument
 
@@ -181,14 +181,14 @@ callback is invoked...
 	
 	//usage
 	foreach(data,function(i,record){
-		console.log(i, record, record.name);
+		console.log(i, record);
 	});
 ```
 >output 
 ```javascript
-0 Object {name: "testuser1", age: 20}
-1 Object {name: "testuser2", age: 23}
-2 Object {name: "testuser3", age: 30}
+0 Object {label: "A", value: 11}
+1 Object {label: "B", value: 22}
+2 Object {label: "C", value: 33}
 ```
 
 
