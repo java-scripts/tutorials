@@ -245,6 +245,7 @@ console.log('sum of [1,2,3] =',reduce(add,[1,2,3]));
 ```
 Defining Curry Function.
 it is a partial function
+
 ```javascript
 var curry = function(fn,arg1){
 	return function(arg2){
@@ -260,7 +261,9 @@ var sum = curry(reduce, add);
 console.log('squares of [1,2,3] =',squares([1,2,3]));
 console.log('sum of [1,2,3] =',sum([1,2,3]));
 ```
-define another function which pipes the result 
+
+Define another function which pipes the result 
+
 ```javascript
 var pipe = function(f1,f2){
 	return function(data){
@@ -269,6 +272,7 @@ var pipe = function(f1,f2){
 }
 ```
 Now everything we need is done. test the below
+
 ```javascript
 //usage
 var sumofSquares = pipe(squares,sum);
