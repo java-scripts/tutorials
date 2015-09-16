@@ -243,8 +243,12 @@ console.log('sum of [1,2,3] =',reduce(add,[1,2,3]));
 ```javascript
 >sum of [1,2,3] = 6
 ```
-Defining Curry Function.
-it is a partial function
+Defining Curry Function. Is a partial function composed out of existing function with less number of arguments.
+
+In the above example the map function requires two arguments(mappingFn,data). 
+I want a curried function out of map with mappingFn. 
+I will reuse this curried function in later point of time supplying the data alone.
+ 
 
 ```javascript
 var curry = function(fn,arg1){
