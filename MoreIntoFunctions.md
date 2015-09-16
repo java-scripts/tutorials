@@ -193,6 +193,16 @@ callback is invoked...
 
 
 # Functional Style
+Writing the code in Declarative Style.
+Involves deriving new functions out of functions.
+```javascript
+var sumofSquaresFn = pipeFn(squaresFn,sumFn);
+sumofSquaresFn([1,2,3]) //output should be 14
+```
+
+
+
 ### Map, Reduce & Currying
+
 # Asynchronous Style
 # Closures and IIFE
