@@ -9,7 +9,7 @@
   * [Parameters and Arguments Object](#parameters-and-arguments-object)
 * [Higher Order functions](#higher-order-functions)
 * [Functional Style](#functional-style)
-  * [Map, Reduce & Currying](#map-reduce--currying)
+  * [Map, Reduce, Partial Functions & Currying](#map-reduce--currying)
 * [Asynchronous Style](#asynchronous-style)
 * [Closures and IIFE](#closures-and-iife)
 
