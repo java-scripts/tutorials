@@ -285,7 +285,16 @@ Now everything we need is done. test the below
 var sumofSquares = pipe(squares,sum);
 //test
 console.log('sumOfSquare of [1,2,3] =', sumofSquares([1,2,3]));
+
+
+//one more example
+var cubes = curry(map, function(v){return v*v*v;});
+var product = curry(reduce, function(a,b){return a*b;});
+var productOfCubes = pipe(cubes,product);
+console.log('productOfCubes of[1,2,3]= ', productOfCubes([1,2,3]));
 ```
+
+
 
 
 # Asynchronous Style
