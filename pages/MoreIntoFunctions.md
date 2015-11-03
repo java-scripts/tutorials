@@ -106,10 +106,18 @@ add(1,2,3);
 >3
 ```
 #####Arguments Object
+using arguments object, it is possible to define a function that adds variable number of arguments
+```javascript
+function add(){
+	var sum=0;
+	for(var i in arguments){
+		sum+=arguments[i];
+	}
+	return sum;
+}
 
-what datatypes can we use as parameters? 
-
->you are free to use any
+```
+Since we can pass any data type as an arguments, lets try the below
 
 ```javascript
 function foo(){	
